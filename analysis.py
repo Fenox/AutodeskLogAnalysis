@@ -7,12 +7,12 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv[1:], 'hl:',["help", "logs="])
     except getopt.GetoptError:
-        print 'befehlFilter.py -logs <logs folder>'
+        print 'analysis.py -logs <logs folder>'
         sys.exit(2)
     
     for opt, arg in opts:
         if opt == '-h':
-            print 'befehlFilter.py -logs <logs folder>'
+            print 'analysis.py -logs <logs folder>'
             sys.exit()
         elif opt in ("-l", "--logs"):
             inputfolder = arg
